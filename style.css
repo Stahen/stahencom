@@ -98,9 +98,6 @@ a {
 	justify-content: flex-start;
 	text-align: left;
 	padding: 0 clamp(24px, 7vw, 110px);
-	/* The photo must be named panorama.jpg. If it's missing, a red gradient shows instead.
-         The photo is pinned to the right so the character stays visible; the text sits on the empty left side.
-         The light overlay only fades the bottom edge into the page background. */
 	background:
 		linear-gradient(
 			to bottom,
@@ -111,7 +108,6 @@ a {
 		url("panorama.png") right center / cover no-repeat,
 		linear-gradient(135deg, #7f1d1d, #12090b);
 }
-/* On phones the character takes most of the width, so the text moves to the bottom */
 @media (max-width: 700px) {
 	.hero {
 		align-items: flex-end;
@@ -176,26 +172,6 @@ a {
 	background: var(--accent-dark);
 	border-color: var(--accent-dark);
 }
-.scroll-hint {
-	position: absolute;
-	bottom: 22px;
-	left: 50%;
-	transform: translateX(-50%);
-	color: #fff;
-	text-decoration: none;
-	font-size: 0.85rem;
-	opacity: 0.8;
-	animation: bounce 1.8s infinite;
-}
-@keyframes bounce {
-	0%,
-	100% {
-		transform: translate(-50%, 0);
-	}
-	50% {
-		transform: translate(-50%, 8px);
-	}
-}
 
 /* ---------- SHARED SECTION STYLES ---------- */
 section {
@@ -221,7 +197,7 @@ section h2::after {
 	font-size: 0.95rem;
 }
 
-/* ---------- ABOUT (short, text only) ---------- */
+/* ---------- ABOUT ---------- */
 .about-text {
 	margin-top: 20px;
 	max-width: 560px;
@@ -229,9 +205,9 @@ section h2::after {
 	color: #e0d0d2;
 }
 
-/* ---------- TRACKS (custom player) ---------- */
+/* ---------- TRACKS ---------- */
 .tracklist {
-	margin-top: 12px;
+	margin-top: 20px;
 	display: grid;
 	gap: 10px;
 }
@@ -267,7 +243,6 @@ section h2::after {
 	opacity: 0.6;
 }
 
-/* Cover art. Put cover1.jpg, cover2.jpg ... next to index.html and they appear automatically. */
 .cover {
 	grid-area: cover;
 	position: relative;
@@ -431,7 +406,6 @@ section h2::after {
 	white-space: nowrap;
 }
 
-/* Featured track: bigger card */
 .track.featured {
 	--size: 112px;
 	grid-template-columns: var(--size) 1fr 56px;
