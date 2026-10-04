@@ -1,313 +1,639 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stahen</title>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <meta name="description" content="Stahen's official website.">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Stahen</title>
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<meta name="description" content="Stahen's official website." />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav class="nav">
+			<a class="logo" href="#top">Stahen</a>
+			<ul>
+				<li><a class="link" href="#about">About</a></li>
+				<li><a class="link" href="#music">Music</a></li>
+				<li><a class="link" href="#contact">Contact</a></li>
+			</ul>
+		</nav>
 
-  <nav class="nav">
-    <a class="logo" href="#top">Stahen</a>
-    <ul>
-      <li><a class="link" href="#about">About</a></li>
-      <li><a class="link" href="#music">Music</a></li>
-      <li><a class="link" href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+		<header class="hero" id="top">
+			<div>
+				<h1>Stahen</h1>
+				<p class="tagline">Artist, Producer & Songwriter</p>
 
-  <header class="hero" id="top">
-    <div>
-      <h1>Stahen</h1>
-      <p class="tagline">Artist, Producer & Songwriter</p>
+				<div class="listen">
+					<a
+						class="btn primary"
+						href="https://open.spotify.com/intl-tr/artist/4lfjyb7BlcXFUC0EQgfqJ3"
+						target="_blank"
+						rel="noopener"
+						>Spotify</a
+					>
+					<a
+						class="btn"
+						href="https://music.apple.com/us/artist/stahen/1731970675"
+						target="_blank"
+						rel="noopener"
+						>Apple Music</a
+					>
+					<a
+						class="btn"
+						href="https://www.youtube.com/@stahenofficial"
+						target="_blank"
+						rel="noopener"
+						>YouTube</a
+					>
+				</div>
+			</div>
+		</header>
 
-      <div class="listen">
-        <a class="btn primary" href="https://open.spotify.com/intl-tr/artist/4lfjyb7BlcXFUC0EQgfqJ3" target="_blank" rel="noopener">Spotify</a>
-        <a class="btn" href="https://music.apple.com/us/artist/stahen/1731970675" target="_blank" rel="noopener">Apple Music</a>
-        <a class="btn" href="https://www.youtube.com/@stahenofficial" target="_blank" rel="noopener">YouTube</a>
-      </div>
-    </div>
-  </header>
+		<section id="about">
+			<h2>About</h2>
+			<p class="about-text">
+				I'm an independent artist and producer. You can listen to my
+				music on all major streaming platforms.
+			</p>
+		</section>
 
-  <section id="about">
-    <h2>About</h2>
-    <p class="about-text">I'm an independent artist and producer. You can listen to my music on all major streaming platforms.</p>
-  </section>
+		<section id="music">
+			<h2>Music</h2>
 
-  <section id="music">
-    <h2>Music</h2>
-    
-    <div class="tracklist">
-    <article class="track featured" data-src="track1.mp3">
-      <div class="cover" data-cover="cover1.jpg"><span class="n">1</span><span class="eq"></span></div>
-      <div class="meta">
-        <h3>Cylinders</h3>
-        <span class="tsub">Dark rap beat (Commission)</span>
-      </div>
-      <button class="play" type="button" aria-label="Play"><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>
-      <div class="prog">
-        <div class="bar" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="line"><div class="fill"></div></div></div>
-        <span class="time">0:00</span>
-      </div>
-    </article>
-    <article class="track" data-src="track2.mp3">
-      <div class="cover" data-cover="cover2.jpg"><span class="n">2</span><span class="eq"></span></div>
-      <div class="meta">
-        <h3>Echochamber</h3>
-        <span class="tsub">It's All True OST</span>
-      </div>
-      <button class="play" type="button" aria-label="Play"><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>
-      <div class="prog">
-        <div class="bar" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="line"><div class="fill"></div></div></div>
-        <span class="time">0:00</span>
-      </div>
-    </article>
-    <article class="track" data-src="track3.mp3">
-      <div class="cover" data-cover="cover3.jpg"><span class="n">3</span><span class="eq"></span></div>
-      <div class="meta">
-        <h3>Afterlife</h3>
-        <span class="tsub">Kingswell: CBN Radio One OST</span>
-      </div>
-      <button class="play" type="button" aria-label="Play"><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>
-      <div class="prog">
-        <div class="bar" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="line"><div class="fill"></div></div></div>
-        <span class="time">0:00</span>
-      </div>
-    </article>
-    <article class="track" data-src="track4.mp3">
-      <div class="cover" data-cover="cover4.jpg"><span class="n">4</span><span class="eq"></span></div>
-      <div class="meta">
-        <h3>Kingswell</h3>
-        <span class="tsub">Kingswell OST</span>
-      </div>
-      <button class="play" type="button" aria-label="Play"><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>
-      <div class="prog">
-        <div class="bar" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="line"><div class="fill"></div></div></div>
-        <span class="time">0:00</span>
-      </div>
-    </article>
-    <article class="track" data-src="track5.mp3">
-      <div class="cover" data-cover="cover5.jpg"><span class="n">5</span><span class="eq"></span></div>
-      <div class="meta">
-        <h3>Taksim Gypsy Kid</h3>
-        <span class="tsub">Kingswell: Radio KW OST</span>
-      </div>
-      <button class="play" type="button" aria-label="Play"><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>
-      <div class="prog">
-        <div class="bar" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="line"><div class="fill"></div></div></div>
-        <span class="time">0:00</span>
-      </div>
-    </article>
-    <article class="track" data-src="track6.mp3">
-      <div class="cover" data-cover="cover6.jpg"><span class="n">6</span><span class="eq"></span></div>
-      <div class="meta">
-        <h3>Partygoer Chase Theme (All Layers)</h3>
-        <span class="tsub">Forgotten by Reality OST</span>
-      </div>
-      <button class="play" type="button" aria-label="Play"><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>
-      <div class="prog">
-        <div class="bar" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="line"><div class="fill"></div></div></div>
-        <span class="time">0:00</span>
-      </div>
-    </article>
-    <article class="track" data-src="track7.mp3">
-      <div class="cover" data-cover="cover7.jpg"><span class="n">7</span><span class="eq"></span></div>
-      <div class="meta">
-        <h3>Ghost Rider (2026)</h3>
-        <span class="tsub">Overdosed Project OST</span>
-      </div>
-      <button class="play" type="button" aria-label="Play"><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>
-      <div class="prog">
-        <div class="bar" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="line"><div class="fill"></div></div></div>
-        <span class="time">0:00</span>
-      </div>
-    </article>
-    <article class="track" data-src="track8.mp3">
-      <div class="cover" data-cover="cover5.jpg"><span class="n">8</span><span class="eq"></span></div>
-      <div class="meta">
-        <h3>Mr. Money</h3>
-        <span class="tsub">Kingswell: Radio KW OST</span>
-      </div>
-      <button class="play" type="button" aria-label="Play"><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>
-      <div class="prog">
-        <div class="bar" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="line"><div class="fill"></div></div></div>
-        <span class="time">0:00</span>
-      </div>
-    </article>
-    <article class="track" data-src="track9.mp3">
-      <div class="cover" data-cover="cover5.jpg"><span class="n">9</span><span class="eq"></span></div>
-      <div class="meta">
-        <h3>Skybound</h3>
-        <span class="tsub">Kingswell: Radio KW OST</span>
-      </div>
-      <button class="play" type="button" aria-label="Play"><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>
-      <div class="prog">
-        <div class="bar" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="line"><div class="fill"></div></div></div>
-        <span class="time">0:00</span>
-      </div>
-    </article>
-    <article class="track" data-src="track10.mp3">
-      <div class="cover" data-cover="cover2.jpg"><span class="n">10</span><span class="eq"></span></div>
-      <div class="meta">
-        <h3>Protest</h3>
-        <span class="tsub">It's All True OST</span>
-      </div>
-      <button class="play" type="button" aria-label="Play"><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>
-      <div class="prog">
-        <div class="bar" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="line"><div class="fill"></div></div></div>
-        <span class="time">0:00</span>
-      </div>
-    </article>
-    </div>
-  </section>
+			<div class="tracklist">
+				<article class="track featured" data-src="track1.mp3">
+					<div class="cover" data-cover="cover1.jpg">
+						<span class="n">1</span><span class="eq"></span>
+					</div>
+					<div class="meta">
+						<h3>Cylinders</h3>
+						<span class="tsub">Dark rap beat (Commission)</span>
+					</div>
+					<button class="play" type="button" aria-label="Play">
+						<svg
+							class="i-play"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M8 5v14l11-7z" /></svg
+						><svg
+							class="i-pause"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M6 5h4v14H6zM14 5h4v14h-4z" />
+						</svg>
+					</button>
+					<div class="prog">
+						<div
+							class="bar"
+							role="slider"
+							tabindex="0"
+							aria-label="Seek"
+							aria-valuemin="0"
+							aria-valuemax="100"
+							aria-valuenow="0"
+						>
+							<div class="line"><div class="fill"></div></div>
+						</div>
+						<span class="time">0:00</span>
+					</div>
+				</article>
+				<article class="track" data-src="track2.mp3">
+					<div class="cover" data-cover="cover2.jpg">
+						<span class="n">2</span><span class="eq"></span>
+					</div>
+					<div class="meta">
+						<h3>Echochamber</h3>
+						<span class="tsub">It's All True OST</span>
+					</div>
+					<button class="play" type="button" aria-label="Play">
+						<svg
+							class="i-play"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M8 5v14l11-7z" /></svg
+						><svg
+							class="i-pause"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M6 5h4v14H6zM14 5h4v14h-4z" />
+						</svg>
+					</button>
+					<div class="prog">
+						<div
+							class="bar"
+							role="slider"
+							tabindex="0"
+							aria-label="Seek"
+							aria-valuemin="0"
+							aria-valuemax="100"
+							aria-valuenow="0"
+						>
+							<div class="line"><div class="fill"></div></div>
+						</div>
+						<span class="time">0:00</span>
+					</div>
+				</article>
+				<article class="track" data-src="track3.mp3">
+					<div class="cover" data-cover="cover3.jpg">
+						<span class="n">3</span><span class="eq"></span>
+					</div>
+					<div class="meta">
+						<h3>Afterlife</h3>
+						<span class="tsub">Kingswell: CBN Radio One OST</span>
+					</div>
+					<button class="play" type="button" aria-label="Play">
+						<svg
+							class="i-play"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M8 5v14l11-7z" /></svg
+						><svg
+							class="i-pause"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M6 5h4v14H6zM14 5h4v14h-4z" />
+						</svg>
+					</button>
+					<div class="prog">
+						<div
+							class="bar"
+							role="slider"
+							tabindex="0"
+							aria-label="Seek"
+							aria-valuemin="0"
+							aria-valuemax="100"
+							aria-valuenow="0"
+						>
+							<div class="line"><div class="fill"></div></div>
+						</div>
+						<span class="time">0:00</span>
+					</div>
+				</article>
+				<article class="track" data-src="track4.mp3">
+					<div class="cover" data-cover="cover4.jpg">
+						<span class="n">4</span><span class="eq"></span>
+					</div>
+					<div class="meta">
+						<h3>Kingswell</h3>
+						<span class="tsub">Kingswell OST</span>
+					</div>
+					<button class="play" type="button" aria-label="Play">
+						<svg
+							class="i-play"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M8 5v14l11-7z" /></svg
+						><svg
+							class="i-pause"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M6 5h4v14H6zM14 5h4v14h-4z" />
+						</svg>
+					</button>
+					<div class="prog">
+						<div
+							class="bar"
+							role="slider"
+							tabindex="0"
+							aria-label="Seek"
+							aria-valuemin="0"
+							aria-valuemax="100"
+							aria-valuenow="0"
+						>
+							<div class="line"><div class="fill"></div></div>
+						</div>
+						<span class="time">0:00</span>
+					</div>
+				</article>
+				<article class="track" data-src="track5.mp3">
+					<div class="cover" data-cover="cover5.jpg">
+						<span class="n">5</span><span class="eq"></span>
+					</div>
+					<div class="meta">
+						<h3>Taksim Gypsy Kid</h3>
+						<span class="tsub">Kingswell: Radio KW OST</span>
+					</div>
+					<button class="play" type="button" aria-label="Play">
+						<svg
+							class="i-play"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M8 5v14l11-7z" /></svg
+						><svg
+							class="i-pause"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M6 5h4v14H6zM14 5h4v14h-4z" />
+						</svg>
+					</button>
+					<div class="prog">
+						<div
+							class="bar"
+							role="slider"
+							tabindex="0"
+							aria-label="Seek"
+							aria-valuemin="0"
+							aria-valuemax="100"
+							aria-valuenow="0"
+						>
+							<div class="line"><div class="fill"></div></div>
+						</div>
+						<span class="time">0:00</span>
+					</div>
+				</article>
+				<article class="track" data-src="track6.mp3">
+					<div class="cover" data-cover="cover6.jpg">
+						<span class="n">6</span><span class="eq"></span>
+					</div>
+					<div class="meta">
+						<h3>Partygoer Chase Theme (All Layers)</h3>
+						<span class="tsub">Forgotten by Reality OST</span>
+					</div>
+					<button class="play" type="button" aria-label="Play">
+						<svg
+							class="i-play"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M8 5v14l11-7z" /></svg
+						><svg
+							class="i-pause"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M6 5h4v14H6zM14 5h4v14h-4z" />
+						</svg>
+					</button>
+					<div class="prog">
+						<div
+							class="bar"
+							role="slider"
+							tabindex="0"
+							aria-label="Seek"
+							aria-valuemin="0"
+							aria-valuemax="100"
+							aria-valuenow="0"
+						>
+							<div class="line"><div class="fill"></div></div>
+						</div>
+						<span class="time">0:00</span>
+					</div>
+				</article>
+				<article class="track" data-src="track7.mp3">
+					<div class="cover" data-cover="cover7.jpg">
+						<span class="n">7</span><span class="eq"></span>
+					</div>
+					<div class="meta">
+						<h3>Ghost Rider (2026)</h3>
+						<span class="tsub">Overdosed Project OST</span>
+					</div>
+					<button class="play" type="button" aria-label="Play">
+						<svg
+							class="i-play"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M8 5v14l11-7z" /></svg
+						><svg
+							class="i-pause"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M6 5h4v14H6zM14 5h4v14h-4z" />
+						</svg>
+					</button>
+					<div class="prog">
+						<div
+							class="bar"
+							role="slider"
+							tabindex="0"
+							aria-label="Seek"
+							aria-valuemin="0"
+							aria-valuemax="100"
+							aria-valuenow="0"
+						>
+							<div class="line"><div class="fill"></div></div>
+						</div>
+						<span class="time">0:00</span>
+					</div>
+				</article>
+				<article class="track" data-src="track8.mp3">
+					<div class="cover" data-cover="cover5.jpg">
+						<span class="n">8</span><span class="eq"></span>
+					</div>
+					<div class="meta">
+						<h3>Mr. Money</h3>
+						<span class="tsub">Kingswell: Radio KW OST</span>
+					</div>
+					<button class="play" type="button" aria-label="Play">
+						<svg
+							class="i-play"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M8 5v14l11-7z" /></svg
+						><svg
+							class="i-pause"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M6 5h4v14H6zM14 5h4v14h-4z" />
+						</svg>
+					</button>
+					<div class="prog">
+						<div
+							class="bar"
+							role="slider"
+							tabindex="0"
+							aria-label="Seek"
+							aria-valuemin="0"
+							aria-valuemax="100"
+							aria-valuenow="0"
+						>
+							<div class="line"><div class="fill"></div></div>
+						</div>
+						<span class="time">0:00</span>
+					</div>
+				</article>
+				<article class="track" data-src="track9.mp3">
+					<div class="cover" data-cover="cover5.jpg">
+						<span class="n">9</span><span class="eq"></span>
+					</div>
+					<div class="meta">
+						<h3>Skybound</h3>
+						<span class="tsub">Kingswell: Radio KW OST</span>
+					</div>
+					<button class="play" type="button" aria-label="Play">
+						<svg
+							class="i-play"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M8 5v14l11-7z" /></svg
+						><svg
+							class="i-pause"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M6 5h4v14H6zM14 5h4v14h-4z" />
+						</svg>
+					</button>
+					<div class="prog">
+						<div
+							class="bar"
+							role="slider"
+							tabindex="0"
+							aria-label="Seek"
+							aria-valuemin="0"
+							aria-valuemax="100"
+							aria-valuenow="0"
+						>
+							<div class="line"><div class="fill"></div></div>
+						</div>
+						<span class="time">0:00</span>
+					</div>
+				</article>
+				<article class="track" data-src="track10.mp3">
+					<div class="cover" data-cover="cover2.jpg">
+						<span class="n">10</span><span class="eq"></span>
+					</div>
+					<div class="meta">
+						<h3>Protest</h3>
+						<span class="tsub">It's All True OST</span>
+					</div>
+					<button class="play" type="button" aria-label="Play">
+						<svg
+							class="i-play"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M8 5v14l11-7z" /></svg
+						><svg
+							class="i-pause"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M6 5h4v14H6zM14 5h4v14h-4z" />
+						</svg>
+					</button>
+					<div class="prog">
+						<div
+							class="bar"
+							role="slider"
+							tabindex="0"
+							aria-label="Seek"
+							aria-valuemin="0"
+							aria-valuemax="100"
+							aria-valuenow="0"
+						>
+							<div class="line"><div class="fill"></div></div>
+						</div>
+						<span class="time">0:00</span>
+					</div>
+				</article>
+			</div>
+		</section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="contact-card">
-      <p>I can make music for you. Get in contact with over email or join the Discord server.</p>
-      <a class="mail" href="mailto:contact@stahen.com">contact@stahen.com</a>
+		<section id="contact">
+			<h2>Contact</h2>
+			<div class="contact-card">
+				<p>
+					I can make music for you. Get in contact with over email or
+					join the Discord server.
+				</p>
+				<a class="mail" href="mailto:contact@stahen.com"
+					>contact@stahen.com</a
+				>
 
-      <div class="social">
-        <a class="btn primary" href="https://discord.com/invite/ekQ94NrSKF" target="_blank" rel="noopener">Join Discord</a>
-        <a class="btn" href="https://x.com/stahenreal" target="_blank" rel="noopener">X</a>
-      </div>
-    </div>
-  </section>
+				<div class="social">
+					<a
+						class="btn primary"
+						href="https://discord.com/invite/ekQ94NrSKF"
+						target="_blank"
+						rel="noopener"
+						>Join Discord</a
+					>
+					<a
+						class="btn"
+						href="https://x.com/stahenreal"
+						target="_blank"
+						rel="noopener"
+						>X</a
+					>
+				</div>
+			</div>
+		</section>
 
-  <footer>&copy; 2026 Stahen - All rights reserved</footer>
+		<footer>&copy; 2026 Stahen - All rights reserved</footer>
 
-  <script>
-    (function () {
-      const items = Array.from(document.querySelectorAll('.track[data-src]'));
-      const audios = [];
+		<script>
+			(function () {
+				const items = Array.from(
+					document.querySelectorAll(".track[data-src]"),
+				);
+				const audios = [];
 
-      const fmt = s => {
-        if (!isFinite(s)) return '0:00';
-        const m = Math.floor(s / 60), r = Math.floor(s % 60);
-        return m + ':' + String(r).padStart(2, '0');
-      };
+				const fmt = (s) => {
+					if (!isFinite(s)) return "0:00";
+					const m = Math.floor(s / 60),
+						r = Math.floor(s % 60);
+					return m + ":" + String(r).padStart(2, "0");
+				};
 
-      items.forEach((el, i) => {
-        const audio = new Audio();
-        audio.preload = 'none';
-        audio.src = el.dataset.src;
-        audios.push(audio);
+				items.forEach((el, i) => {
+					const audio = new Audio();
+					audio.preload = "none";
+					audio.src = el.dataset.src;
+					audios.push(audio);
 
-        const btn = el.querySelector('.play');
-        const bar = el.querySelector('.bar');
-        const fill = el.querySelector('.fill');
-        const time = el.querySelector('.time');
-        const tsub = el.querySelector('.tsub');
-        const cover = el.querySelector('.cover');
+					const btn = el.querySelector(".play");
+					const bar = el.querySelector(".bar");
+					const fill = el.querySelector(".fill");
+					const time = el.querySelector(".time");
+					const tsub = el.querySelector(".tsub");
+					const cover = el.querySelector(".cover");
 
-        // only show the cover if the file exists
-        if (cover && cover.dataset.cover) {
-          const img = new Image();
-          img.onload = () => {
-            cover.style.setProperty('--img', 'url("' + cover.dataset.cover + '")');
-            cover.classList.add('has-cover');
-          };
-          img.src = cover.dataset.cover;
-        }
+					// only show the cover if the file exists
+					if (cover && cover.dataset.cover) {
+						const img = new Image();
+						img.onload = () => {
+							cover.style.setProperty(
+								"--img",
+								'url("' + cover.dataset.cover + '")',
+							);
+							cover.classList.add("has-cover");
+						};
+						img.src = cover.dataset.cover;
+					}
 
-        const update = () => {
-          const d = audio.duration;
-          const p = isFinite(d) && d > 0 ? audio.currentTime / d : 0;
-          fill.style.width = (p * 100) + '%';
-          bar.setAttribute('aria-valuenow', Math.round(p * 100));
-          time.textContent = isFinite(d) ? fmt(audio.currentTime) + ' / ' + fmt(d) : fmt(audio.currentTime);
-        };
+					const update = () => {
+						const d = audio.duration;
+						const p =
+							isFinite(d) && d > 0 ? audio.currentTime / d : 0;
+						fill.style.width = p * 100 + "%";
+						bar.setAttribute("aria-valuenow", Math.round(p * 100));
+						time.textContent = isFinite(d)
+							? fmt(audio.currentTime) + " / " + fmt(d)
+							: fmt(audio.currentTime);
+					};
 
-        const fail = () => {
-          el.classList.add('unavailable');
-          el.classList.remove('playing');
-          if (tsub) tsub.textContent = 'Audio file not found';
-        };
+					const fail = () => {
+						el.classList.add("unavailable");
+						el.classList.remove("playing");
+						if (tsub) tsub.textContent = "Audio file not found";
+					};
 
-        btn.addEventListener('click', () => {
-          if (audio.paused) {
-            audio.play().catch(fail);
-          } else {
-            audio.pause();
-          }
-        });
+					btn.addEventListener("click", () => {
+						if (audio.paused) {
+							audio.play().catch(fail);
+						} else {
+							audio.pause();
+						}
+					});
 
-        audio.addEventListener('play', () => {
-          audios.forEach(o => { if (o !== audio) o.pause(); });
-          el.classList.add('playing');
-          btn.setAttribute('aria-label', 'Pause');
-        });
-        audio.addEventListener('pause', () => {
-          el.classList.remove('playing');
-          btn.setAttribute('aria-label', 'Play');
-        });
-        audio.addEventListener('ended', () => {
-          audio.currentTime = 0;
-          update();
-          const next = items[i + 1];
-          if (next) next.querySelector('.play').click();
-        });
-        audio.addEventListener('timeupdate', update);
-        audio.addEventListener('loadedmetadata', update);
-        audio.addEventListener('error', fail);
+					audio.addEventListener("play", () => {
+						audios.forEach((o) => {
+							if (o !== audio) o.pause();
+						});
+						el.classList.add("playing");
+						btn.setAttribute("aria-label", "Pause");
+					});
+					audio.addEventListener("pause", () => {
+						el.classList.remove("playing");
+						btn.setAttribute("aria-label", "Play");
+					});
+					audio.addEventListener("ended", () => {
+						audio.currentTime = 0;
+						update();
+						const next = items[i + 1];
+						if (next) next.querySelector(".play").click();
+					});
+					audio.addEventListener("timeupdate", update);
+					audio.addEventListener("loadedmetadata", update);
+					audio.addEventListener("error", fail);
 
-        const seekTo = p => {
-          if (isFinite(audio.duration)) audio.currentTime = Math.min(Math.max(p, 0), 1) * audio.duration;
-        };
-        bar.addEventListener('click', e => {
-          const r = bar.getBoundingClientRect();
-          seekTo((e.clientX - r.left) / r.width);
-        });
-        bar.addEventListener('keydown', e => {
-          if (e.key === 'ArrowRight') audio.currentTime += 5;
-          if (e.key === 'ArrowLeft') audio.currentTime -= 5;
-        });
-      });
-    })();
-  </script>
+					const seekTo = (p) => {
+						if (isFinite(audio.duration))
+							audio.currentTime =
+								Math.min(Math.max(p, 0), 1) * audio.duration;
+					};
+					bar.addEventListener("click", (e) => {
+						const r = bar.getBoundingClientRect();
+						seekTo((e.clientX - r.left) / r.width);
+					});
+					bar.addEventListener("keydown", (e) => {
+						if (e.key === "ArrowRight") audio.currentTime += 5;
+						if (e.key === "ArrowLeft") audio.currentTime -= 5;
+					});
+				});
+			})();
+		</script>
 
-  <script>
-    (function () {
-      const ids = ['about', 'music', 'contact'];
-      const links = {};
-      document.querySelectorAll('.nav a.link').forEach(a => { links[a.getAttribute('href').slice(1)] = a; });
+		<script>
+			(function () {
+				const ids = ["about", "music", "contact"];
+				const links = {};
+				document.querySelectorAll(".nav a.link").forEach((a) => {
+					links[a.getAttribute("href").slice(1)] = a;
+				});
 
-      const LINE = 120;          // hardcoded section length
-      let lockUntil = 0;         // after a menu click, the clicked link stays marked while the page scrolls there
-      let ticking = false;
+				const LINE = 120; // hardcoded section length
+				let lockUntil = 0; // after a menu click, the clicked link stays marked while the page scrolls there
+				let ticking = false;
 
-      const mark = id => ids.forEach(k => { if (links[k]) links[k].classList.toggle('active', k === id); });
+				const mark = (id) =>
+					ids.forEach((k) => {
+						if (links[k])
+							links[k].classList.toggle("active", k === id);
+					});
 
-      const update = () => {
-        ticking = false;
-        if (Date.now() < lockUntil) return;
-        let current = null;
-        ids.forEach(id => {
-          const el = document.getElementById(id);
-          if (el && el.getBoundingClientRect().top <= LINE) current = id;
-        });
-        // mark the bottom-most one if you're at the bottom of the page
-        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) current = 'contact';
-        mark(current);
-      };
-      const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
+				const update = () => {
+					ticking = false;
+					if (Date.now() < lockUntil) return;
+					let current = null;
+					ids.forEach((id) => {
+						const el = document.getElementById(id);
+						if (el && el.getBoundingClientRect().top <= LINE)
+							current = id;
+					});
+					// mark the bottom-most one if you're at the bottom of the page
+					if (
+						window.innerHeight + window.scrollY >=
+						document.documentElement.scrollHeight - 4
+					)
+						current = "contact";
+					mark(current);
+				};
+				const onScroll = () => {
+					if (!ticking) {
+						ticking = true;
+						requestAnimationFrame(update);
+					}
+				};
 
-      // mark a menu link immediately when you click it, to avoid jumping to the wrong one while scrolling
-      Object.keys(links).forEach(id => {
-        links[id].addEventListener('click', () => {
-          mark(id);
-          lockUntil = Date.now() + 1100;
-          setTimeout(update, 1150);
-        });
-      });
+				// mark a menu link immediately when you click it, to avoid jumping to the wrong one while scrolling
+				Object.keys(links).forEach((id) => {
+					links[id].addEventListener("click", () => {
+						mark(id);
+						lockUntil = Date.now() + 1100;
+						setTimeout(update, 1150);
+					});
+				});
 
-      window.addEventListener('scroll', onScroll, { passive: true });
-      window.addEventListener('resize', onScroll);
-      update();
-    })();
-  </script>
-</body>
+				window.addEventListener("scroll", onScroll, { passive: true });
+				window.addEventListener("resize", onScroll);
+				update();
+			})();
+		</script>
+	</body>
 </html>
