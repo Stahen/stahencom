@@ -16,7 +16,12 @@ html {
 	scroll-padding-top: 64px;
 }
 body {
-	font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+	font-family:
+		system-ui,
+		-apple-system,
+		"Segoe UI",
+		Roboto,
+		sans-serif;
 	background: var(--bg);
 	color: var(--text);
 	line-height: 1.6;
@@ -195,7 +200,6 @@ section h2::after {
 /* ---------- ABOUT ---------- */
 .about-text {
 	margin-top: 20px;
-	max-width: 560px;
 	font-size: 1.05rem;
 	color: #e0d0d2;
 }
