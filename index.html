@@ -496,7 +496,7 @@
 				items.forEach((el, i) => {
 					const audio = new Audio();
 					audio.preload = "none";
-					audio.src = el.dataset.src;
+					audio.src = `music/${el.dataset.src}`;
 					audios.push(audio);
 
 					const btn = el.querySelector(".play");
@@ -512,11 +512,11 @@
 						img.onload = () => {
 							cover.style.setProperty(
 								"--img",
-								'url("' + cover.dataset.cover + '")',
+								'url("/covers/' + cover.dataset.cover + '")',
 							);
 							cover.classList.add("has-cover");
 						};
-						img.src = cover.dataset.cover;
+						img.src = `covers/${cover.dataset.cover}`;
 					}
 
 					const update = () => {
